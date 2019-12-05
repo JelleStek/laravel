@@ -16,4 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/contact', 'ContactController@contactPage');
-Route::get('/producten/{id}', 'ProductController@show')->where('id', '[0-9]+');
+Route::get('/producten/create', 'ProductController@create');
