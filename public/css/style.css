@@ -1,0 +1,66 @@
+body, html, * {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+/*header*/
+.header {
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/main/header.jpg");
+    color: #fff;
+}
+.header--content {
+    margin-top: 5em;
+    margin-left: 2em;
+}
+.header--content p {
+    font-size: .7em;
+}
+
+/*nav*/
+
+nav {
+    background: #000;
+    height: 50px;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 10em;
+    line-height: 50px;
+}
+nav ul li {
+    margin-right: 3em;
+    font-size: 1.5em;
+    text-align: center;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a.active {
+    text-decoration: underline;
+}
+/*------------------*/
+
+.producten--grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5em;
+}
+
+.product {
+    display: block;
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.macbook {
+    background: url("../img/producten/macbook.jpg");
+}

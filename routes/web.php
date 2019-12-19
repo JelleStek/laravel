@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/contact', 'ContactController@contactPage');
-Route::get('/producten/create', 'ProductController@create');
+Route::get('/', 'HomeController@showHome')->name('home');
+Route::get('/producten', 'ProductController@showProducts')->name('producten');
+Route::get('/producten/macbook', 'ProductController@showMacbook');
