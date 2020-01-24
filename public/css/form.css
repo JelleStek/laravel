@@ -7,7 +7,7 @@
     background-color: #ff8990;
     border-radius: .5rem;
 }
-.form_error ul {
+.form_error p {
     padding: 20px;
 }
 
@@ -23,6 +23,18 @@
     text-align: left;
     height: 30px;
     margin-bottom: 2em;
+    border-radius: .2em;
+    border: 1px solid black;
+}
+.error-message {
+    grid-column: 2/3;
+    background: #ff0000;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: .2em;
+    margin-bottom: .5em;
+    opacity: .8;
+    width: 87%;
 }
 .form-group label {
     text-align: right;
@@ -48,4 +60,7 @@ form button:hover {
     background-color: #ff580e;
     transition: .5s;
     cursor: pointer;
+}
+.is-invalid {
+    border: 1px solid red;
 }

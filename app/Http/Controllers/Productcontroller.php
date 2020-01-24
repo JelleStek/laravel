@@ -43,15 +43,15 @@ class Productcontroller extends Controller
     {
         $request->validate(
             [
-                'title' => 'required',
-                'description' => 'required',
-                'price' => 'required',
-                'pub_date' => 'required'
+                'title' => 'required|min:3',
+                'description' => 'required|min:10',
+                'price' => 'required|numeric|gt:0',
+                'pub_date' => 'required|after_or_equal:today'
             ]
 
 
         );
-        return 'VALIDATIE IS GELUKT';
+        return 'GEGEVENS IN DE DATABASE OPSLAAN';
     }
 
     /**
