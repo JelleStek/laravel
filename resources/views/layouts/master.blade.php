@@ -33,7 +33,7 @@
 <header>
     <h2>
     @section('header')
-        Webshop - Laravel
+
     @show
     </h2>
 </header>
