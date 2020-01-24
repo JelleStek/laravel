@@ -17,7 +17,7 @@
 <nav>
     <div class="nav">
         <div class="nav_left">
-            <h1>Webshop.nl</h1>
+            <h1>Zonnenkill.nl</h1>
         </div>
         <div class="nav_right">
             <ul>

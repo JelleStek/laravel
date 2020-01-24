@@ -16,6 +16,10 @@ class Productcontroller extends Controller
             {
                 return view('producten');
             }
+    public function product1()
+    {
+        return view('product.1');
+    }
 
     public function index()
     {

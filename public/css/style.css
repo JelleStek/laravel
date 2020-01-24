@@ -3,6 +3,7 @@ body, html, * {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    font-weight: normal;
 }
 
 /*header*/
@@ -135,15 +136,26 @@ footer p {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5em;
 }
-
 .product {
-    display: block;
-    height: 400px;
     width: 400px;
-    background-size: cover;
-    margin: 0 auto;
+    text-align: center;
+    margin: auto;
+}
+ .midde {
+    text-align: center;
+}
+.product img {
+    width: 400px;
+}
+.product h2, a{
+    text-decoration: none;
+    color: #000;
+}
+.product p {
+    color: #4C4C4A;
 }
 
-.macbook {
-    background: url("../img/producten/macbook.jpg");
+
+.space {
+    height: 100px;
 }
