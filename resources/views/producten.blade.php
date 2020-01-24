@@ -10,12 +10,7 @@
     </div>
 @endsection
 
-@section('nav')
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="{{route('producten')}}" class="active">Producten</a></li>
-    </ul>
-@endsection
+
 
 @section('content')
     <h2>producten</h2>

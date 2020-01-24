@@ -14,3 +14,5 @@
 Route::get('/', 'HomeController@showHome')->name('home');
 Route::get('/producten', 'ProductController@showProducts')->name('producten');
 Route::get('/producten/macbook', 'ProductController@showMacbook');
+Route::get('/producten/add', 'ProductController@create')->name('product.add');
+Route::post('/producten/add', 'ProductController@store')->name('product.store');
