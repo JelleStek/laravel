@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB ;
 
 class Productcontroller extends Controller
 {
@@ -12,9 +13,12 @@ class Productcontroller extends Controller
      * @return \Illuminate\Http\Response
      */
 
+
     public function showProducts()
-            {
-                return view('producten');
+    {
+        $producten = DB::table('producten')->get();
+
+                return view('producten',['producten' => $producten]);
             }
     public function product1()
     {
