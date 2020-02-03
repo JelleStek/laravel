@@ -16,7 +16,7 @@
     <h1 class="midde">Latest releases</h1>
     <div class="producten--grid">
         @foreach($producten as $product)
-            <a href="/producten/1">
+            <a href="{{ $product->href }}">
                 <div class="product">
                     <img src="{{ $product->img }}" alt="">
                     <h2>{{ $product->title }}</h2>

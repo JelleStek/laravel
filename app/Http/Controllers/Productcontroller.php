@@ -14,6 +14,13 @@ class Productcontroller extends Controller
      */
 
 
+    public function product($productUrl) {
+
+        $producten = DB::table('producten')->where('id', '=', $productUrl)->limit(1)->get();
+
+        return view('product', ['producten' => $producten]);
+    }
+
     public function showProducts()
     {
         $producten = DB::table('producten')->get();
